@@ -4,7 +4,7 @@ Diagramming and Documentation of ELK Stack Project
 
 The files in this repository were used to configure the network depicted below.
 
-![Network Diagram](/Diagrams/Project-Network-Diagram.png)
+![Network Diagram](/Diagrams/Project-Netwotk-Diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -152,7 +152,8 @@ http://[ELK-VM-ip]:5601/app/kibana
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 
 
--	Filebeat playbook-  To create the filebeat-configuration.yml file: nano filebeat-configuration.yml. For this, I used the filebeat configuration file template.
+-	Filebeat playbook
+-  To create the filebeat-configuration.yml file: nano filebeat-configuration.yml. For this, I used the filebeat configuration file template.
 
 -  To create the playbook: nano filebeat-playbook.yml
 
@@ -160,15 +161,18 @@ As a **Bonus**, provide the specific commands the user will need to run to downl
 
 ![filebeat](/Images/filebeat-playbook.png)
 
--	To run the playbook: ansible-playbook filebeat-playbook.yml
+
+-	To run the playbook: ansible-playbook filebeat-playbook.yml
 
 
 
 
 -	Metricbeat playbook
--  To create the metricbeat-configuration.yml file: nano metricbeat-configuration.yml. For this, I used the metricbeat configuration file template.
+
+-  To create the metricbeat-configuration.yml file: nano metricbeat-configuration.yml. For this, I used the metricbeat configuration file template.
 
 -  To create the playbook: nano metricbeat-playbook.yml
 
 ---![metricbeat](/Images/metricbeat-playbook.png)
--	To run the playbook: ansible-playbook metricbeat-playbook.yml
+
+-	To run the playbook: ansible-playbook metricbeat-playbook.yml
